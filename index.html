@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="DE">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GreenGarnishLabs - Home</title>
+
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <script src="js/script.js" defer></script>
+        <script src="js/filter.js"></script>
+        <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div include-html="includes/header.html"></div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="title">Vegane Vielfalt<br><span class="subtitle">Entdecken & Genießen</span></h1>
+                <button class="cta-btn hero-btn"><a href="rezeptfilter-1.html">Rezepte finden</a></button>
+            </div>
+        </section>
+        <section class="newest-recipe">
+            <div class="section__title">
+                <h2>Unsere neuesten Kreationen</h2>
+            </div>
+            <div class="recipe-cards">
+                <article class="recipe-card">
+                    <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
+                    <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
+                    <p class="extra">mit Tahini-Dressing</p>
+                    <p>Zubereitungszeit: 40 Minuten<br>
+                    Schweregrad: Einfach</p>
+                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                </article>
+                <article class="recipe-card">
+                    <img src="ressources/img/quiche.png" alt="Quiche">
+                    <h3>Quiche</h3>
+                    <p class="extra">mit Zucchini und Paprika</p>
+                    <p>Zubereitungszeit: 75 Minuten<br>
+                    Schweregrad: Mittel</p>
+                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                </article>
+                <article class="recipe-card">
+                    <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
+                    <h3>Gemüselasagne</h3>
+                    <p class="extra">mit Tahini-Dressing</p>
+                    <p>Zubereitungszeit: 40 Minuten<br>
+                    Schweregrad: Einfach</p>
+                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                </article>
+
+            </div>
+        </section>
+        <section class="categories">
+            <div class="section__title">
+                <h2>Köstliche Vielfalt für jeden Gang</h2>
+            </div>
+            <div class="categorie-cards">
+                <article class="categorie-card">
+                    <img src="ressources/img/vorspeise.png" alt="Buddha Bowl">
+                    <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
+                </article>
+                <article class="categorie-card">
+                    <img src="ressources/img/hauptgericht.png" alt="Quiche">
+                    <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
+                </article>
+                <article class="categorie-card">
+                    <img src="ressources/img/dessert.png" alt="Buddha Bowl">
+                    <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
+                </article>
+            </div>
+        </section>
+        <section class="tipps">
+            <div class="section__title">
+                <h2>Beliebteste Tipps & Tricks für die Küche</h2>
+            </div>
+            <article class="home-tipp-card">
+                <div class="tipp-card-right">
+                    <h2>Ersatz für Eier beim Backen</h2>
+                    <p>Wenn du Eier beim Backen ersetzen möchtest, gibt es zahlreiche vegane Alternativen. Apfelmus, zerdrückte Bananen oder Chia-Samen in Wasser eingeweicht funktionieren hervorragend. Diese Zutaten verleihen deinen Backwaren die nötige Feuchtigkeit und Bindung.</p>
+                    <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
+                </div>
+                <img src="ressources/img/tipp-eier.png" alt="">
+            </article>
+            <article class="home-tipp-card reverse">
+                <img src="ressources/img/tipp-umami.png" alt="">
+                <div class="tipp-card-right">
+                    <h2>Mehr Geschmack mit Umami</h2>
+                    <p>Vegane und vegetarische Gerichte profitieren von umami-reichen Zutaten, die einen tiefen, herzhaften Geschmack bieten. Verwende Sojasauce, Miso, getrocknete Tomaten oder Pilze, um deinen Gerichten mehr Tiefe und Komplexität zu verleihen.</p>
+                    <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
+                </div>
+            </article>
+            <article class="home-tipp-card">
+                <div class="tipp-card-right">
+                    <h2>Cremige Saucen ohne Milchprodukte</h2>
+                    <p>Für cremige Saucen und Dressings musst du nicht auf Milchprodukte zurückgreifen. Cashewkerne, die in Wasser eingeweicht und dann püriert werden, ergeben eine wunderbar cremige Basis. Alternativ kannst du auch pflanzliche Milchsorten wie Mandel- oder Kokosmilch verwenden.</p>
+                    <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
+                </div>
+                <img src="ressources/img/tipp-milch.png" alt="">
+            </article>
+        </section>
+        <div include-html="includes/footer.html"></div>
+    </body>
+</html>

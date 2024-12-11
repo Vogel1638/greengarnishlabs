@@ -1,0 +1,63 @@
+
+footer {
+    margin: 15px 30px;
+}
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer  {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.fa-brands {
+    transition: ease 0.3s;
+}
+
+.fa-instagram {
+    margin-right: 10px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    color:  #ee2a7b;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.impressum {
+    margin-top: 15px;
+}
+
+.impressum a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FEF5DE;
+}
+
+.impressum a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    .left-footer {
+        display: none;
+    }
+    .right-footer {
+        display: none;
+    }
+
+    .upper {
+        justify-content: center;
+    }
+}

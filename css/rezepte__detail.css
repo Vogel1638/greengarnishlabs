@@ -1,0 +1,126 @@
+/*NOTE Titel Berreich*/
+.rezept-content {
+    padding: 30px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.back p {
+    margin-left: 10px;
+}
+
+.infos {
+    display: flex;
+    gap: 30px
+}
+
+.rezept-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 42px;
+}
+
+.zubereitung-details {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.left-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.zutaten {
+    width: 546px;
+}
+
+.zutaten-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    background-color: #FEF5DE;
+    color: #010300;
+    width: 120px;
+    height: 25px;
+}
+
+.zutaten-detail {
+   display: flex;
+   background-color: #FEF5DE;
+   padding: 30px;
+   border-radius: 0 15px 15px 15px;
+}
+
+.zutaten-detail ul li{
+   color: #010300;
+}
+
+.servier-tipp {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 546px;
+}
+
+.servier-titel {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px 15px 0 0;
+   background-color: #FEF5DE;
+   color: #010300;
+   width: 120px;
+   height: 25px;
+}
+
+.servier-detail {
+    display: flex;
+    background-color: #FEF5DE;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.servier-detail p {
+    color: #010300;
+}
+
+.anleitung {
+    width: 839px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.anleitung-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    background-color: #FEF5DE;
+    color: #010300;
+    width: 120px;
+    height: 25px;
+ }
+ 
+.anleitung-detail {
+    background-color: #FEF5DE;
+    padding: 30px;
+    border-radius: 15px 0 15px 15px;
+}
+
+.anleitung-detail p, .anleitung-detail h3 {
+color: #010300;
+}

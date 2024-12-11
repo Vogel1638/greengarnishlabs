@@ -1,0 +1,78 @@
+/*NOTE Tipp Hero bild*/
+.tipp-detail-hero {
+    width: 100%;
+}
+
+/* NOTE Tipp Content*/
+.tipp-content {
+    padding: 30px;
+}
+
+.tipp-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back i {
+    margin-right: 8px;
+}
+
+.tipp-slider {
+    background-color: #FEF5DE;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    color: #010300;
+    margin: 50px 0;
+}
+
+.tipp-slider-tabs {
+    display: flex;
+    background-color: #FEF5DE;
+    width: 100%;
+}
+
+.tipp-tab {
+    background-color: #010300;
+    color: #FEF5DE;
+    flex: 1;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.tipp-tab.active {
+    background-color: #FEF5DE;
+    color: #010300;
+}
+
+.tipp-tab:hover {
+    background-color: #FEF5DE;
+    color: #010300;
+}
+
+.tipp-slider-content {
+    padding: 20px;
+}
+
+.tipps-content {
+    display: none;
+}
+
+.tipps-content.active {
+    display: block;
+}

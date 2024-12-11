@@ -1,0 +1,200 @@
+/* NOTE Popup-Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 750px;
+    width: 100%;
+    z-index: 1000;
+    display: none; 
+}
+
+.popup.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* NOTE Überlagerung für den Hintergrund */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block; 
+}
+
+.filter-body {
+    background: #232323;
+    max-width: 750px;
+    border-radius: 15px;
+    padding: 30px;
+    max-height: 650px;
+}
+
+/*NOTE Filterheader*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.close::before,
+.close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*NOTE Search bar*/
+.searchbar-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.searchbar {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 60%;
+    background-color: #FEF5DE;
+}
+
+.searchbar i{
+    color: #010300;
+}
+
+.searchbar button {
+    border:none
+}
+
+.searchbar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    outline-width: 0;
+}
+
+.searchbar input:active, .searchbar input:focus {
+    border: none;
+}
+
+/*NOTE Zutaten*/
+.zaehler {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.zaehler > p {
+    color: white;
+}
+
+.zutaten {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.zutaten::-webkit-scrollbar {
+    display: none;
+}
+
+.zutat {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zutatbild {
+    content:"";
+    background: url('../ressources/img/zutaten/tomato-2282101_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.zutat > p {
+    color: white;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #FEF5DE;
+    border-radius: 12.5px;
+    height: 40px;
+    width: 180px;
+    transition: 0.3s;
+    color: #FEF5DE;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn a{
+    color: #FEF5DE;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #FEF5DE;
+    color: #010300;
+}
+
+.btn:hover a {
+    color: #010300;
+}
+

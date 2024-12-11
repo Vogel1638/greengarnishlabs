@@ -1,0 +1,43 @@
+<header>
+    <div class="desktop-header">
+        <a href="../index.html" class="logo">GreenGarnishLabs</a>
+        <nav class="desktop__navbar">
+            <menu>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="rezepte.html" class="nav-link">Rezepte</a></li>
+                <li class="nav-item"><a href="tipps-tricks.html" class="nav-link">Tipps & Tricks</a></li>
+            </menu>
+        </nav>
+        <div class="right-header">
+            <button class="cta-btn open-filter-btn" id="filterBtn">Rezept-Finder</button>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-regular fa-heart fa-xl"></i>  
+        </div>     
+    </div>
+    <div class="mobile-header">
+        <h1 class="logo">GreenGarnishLabs</h1>
+        <button class="hamburger-menu" onclick="toggleOverlay()" aria-label="Open Mobile Navigation"><i class="fas fa-bars"></i></button>
+    </div>
+</header>
+
+<!--NOTE Responsiv Header-->
+
+<header class="overlay" id="mobile-overlay">
+    <div class="logo-close">
+        <h1 class="logo">GreenGarnishLabs</h1>
+        <button class="close-btn" onclick="toggleOverlay()"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile__navbar">
+        <menu>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="rezepte.html" class="nav-link">Rezepte</a></li>
+            <li class="nav-item"><a href="tipps-tricks.html" class="nav-link">Tipps & Tricks</a></li>
+        </menu>
+        <button class="cta-btn"><a href="rezeptfilter-1.html">Rezept-Finder</a></button>
+        <div class="mobile__icons">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-regular fa-heart fa-xl"></i>  
+        </div>
+    </nav>
+    
+</header>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="css/filter.css">
+    <script src="js/filter.js"></script>
+</head>
+<body>
+    <!-- Popup-Container -->
+    <div id="filterPopup" class="popup hidden">
+        <div class="filter-body">
+            <header>
+                <h2>Wählen Sie eines oder mehrere Zutaten die Sie zu Verfügung haben.</h2>
+                <div class="close" id="closePopup"></div>
+            </header>
+            <section class="searchbar-container">
+                <div class="searchbar">
+                    <input type="text" placeholder="Tomate">
+                    <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                </div>
+            </section>
+            <div class="zaehler">
+                <p>Ausgewählte Zutaten: <span id="anzahl-zutaten">0</span></p>
+            </div>
+            <section class="zutaten">
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Tomate</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Tomate</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Tomate</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Frühlingszwiebeln</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Lauch</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Basilikum</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Linsen</p>
+                </div>
+                <div class="zutat">
+                    <div class="zutatbild"></div>
+                    <p class="zutatname">Karotte</p>
+                </div>
+            </section>
+            <button class="btn">Nächster Schritt</button>
+        </div>
+    </div>
+</body>
+</html>

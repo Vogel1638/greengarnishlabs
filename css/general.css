@@ -1,0 +1,63 @@
+/* NOTE Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*NOTE Typographie*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../ressources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Mr De Haviland';
+    src: url('../ressources/fonts/Mr_De_Haviland/MrDeHaviland-Regular.ttf');
+}
+
+/*NOTE General*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #010300;
+    color: #FEF5DE;
+    max-width: 2000px;
+}
+
+.divider {
+    margin: 100px 30px;
+    height: 2px;
+    background-color: #FEF5DE;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #FEF5DE;
+    border-radius: 12.5px;
+    height: 40px;
+    width: 180px;
+    transition: 0.3s;
+    color: #FEF5DE;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn a{
+    color: #FEF5DE;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #FEF5DE;
+    color: #010300;
+}
+
+.btn:hover a {
+    color: #010300;
+}
