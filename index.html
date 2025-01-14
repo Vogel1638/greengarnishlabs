@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GreenGarnishLabs - Home</title>
+        <title>GreenGarnishLabs - Vegane Rezepte entdecken & genießen</title>
+        <meta name="description" content="Entdecke eine Vielzahl veganer Rezepte, Tipps & Tricks für die Küche. Von Vorspeisen bis Desserts – entdecke, genieße und lass dich inspirieren!">
+        <meta name="keywords" content="Vegane Rezepte, Tipps, Tricks, Küche, Vorspeisen, Hauptgerichte, Desserts, Buddha Bowl, Quiche, Lasagne">
+        <meta name="author" content="GreenGarnishLabs">
 
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/header.css">
@@ -12,96 +15,112 @@
         <link rel="stylesheet" href="css/filter.css">
         <script src="js/script.js" defer></script>
         <script src="js/filter.js"></script>
+        <script src="js/recipes.js" defer></script>
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div include-html="includes/header.html"></div>
-        <section class="hero">
+        <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
-                <h1 class="title">Vegane Vielfalt<br><span class="subtitle">Entdecken & Genießen</span></h1>
+                <h1 id="hero-title" class="title">Vegane Vielfalt<br><span class="subtitle">Entdecken &amp; Genießen</span></h1>
                 <button class="cta-btn hero-btn"><a href="rezeptfilter-1.html">Rezepte finden</a></button>
             </div>
         </section>
-        <section class="newest-recipe">
+        <section class="newest-recipe-slider" aria-labelledby="newest-recipe-title">
             <div class="section__title">
-                <h2>Unsere neuesten Kreationen</h2>
+                <h2 id="newest-recipe-title">Unsere neuesten Kreationen</h2>
             </div>
-            <div class="recipe-cards">
-                <article class="recipe-card">
-                    <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
-                    <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
-                    <p class="extra">mit Tahini-Dressing</p>
-                    <p>Zubereitungszeit: 40 Minuten<br>
-                    Schweregrad: Einfach</p>
-                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-                </article>
-                <article class="recipe-card">
-                    <img src="ressources/img/quiche.png" alt="Quiche">
-                    <h3>Quiche</h3>
-                    <p class="extra">mit Zucchini und Paprika</p>
-                    <p>Zubereitungszeit: 75 Minuten<br>
-                    Schweregrad: Mittel</p>
-                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-                </article>
-                <article class="recipe-card">
-                    <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
-                    <h3>Gemüselasagne</h3>
-                    <p class="extra">mit Tahini-Dressing</p>
-                    <p>Zubereitungszeit: 40 Minuten<br>
-                    Schweregrad: Einfach</p>
-                    <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-                </article>
-
+            <div class="slider" role="region" aria-roledescription="carousel" aria-labelledby="newest-recipe-title">
+                <button class="slider__button--left" aria-label="Vorheriges Rezept">&#10094;</button>
+                <div class="slider-track" tabindex="0" aria-live="polite">
+                    <article class="recipe-card slider__slide" role="group" aria-roledescription="slide" aria-label="1 von 5">
+                        <img src="ressources/img/vegan-bowl.png" alt="Vegane Buddha Bowl mit Tahini-Dressing">
+                        <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
+                        <p class="extra">mit Tahini-Dressing</p>
+                        <p>Zubereitungszeit: 40 Minuten<br>Schweregrad: Einfach</p>
+                        <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                    </article>
+                    <article class="recipe-card slider__slide" role="group" aria-roledescription="slide" aria-label="2 von 5">
+                        <img src="ressources/img/quiche.png" alt="Vegane Quiche mit Zucchini und Paprika">
+                        <h3>Quiche</h3>
+                        <p class="extra">mit Zucchini und Paprika</p>
+                        <p>Zubereitungszeit: 75 Minuten<br>Schweregrad: Mittel</p>
+                        <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                    </article>
+                    <article class="recipe-card slider__slide" role="group" aria-roledescription="slide" aria-label="3 von 5">
+                        <img src="ressources/img/lasagne.png" alt="Vegane Gemüselasagne">
+                        <h3>Gemüselasagne</h3>
+                        <p class="extra">mit Tahini-Dressing</p>
+                        <p>Zubereitungszeit: 40 Minuten<br>Schweregrad: Einfach</p>
+                        <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                    </article>
+                    <article class="recipe-card slider__slide" role="group" aria-roledescription="slide" aria-label="4 von 5">
+                        <img src="ressources/img/vegan-bowl.png" alt="Vegane Buddha Bowl mit Tahini-Dressing">
+                        <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
+                        <p class="extra">mit Tahini-Dressing</p>
+                        <p>Zubereitungszeit: 40 Minuten<br>Schweregrad: Einfach</p>
+                        <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                    </article>
+                    <article class="recipe-card slider__slide" role="group" aria-roledescription="slide" aria-label="5 von 5">
+                        <img src="ressources/img/quiche.png" alt="Vegane Quiche mit Zucchini und Paprika">
+                        <h3>Quiche</h3>
+                        <p class="extra">mit Zucchini und Paprika</p>
+                        <p>Zubereitungszeit: 75 Minuten<br>Schweregrad: Mittel</p>
+                        <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
+                    </article>
+                </div>
+                <button class="slider__button--right" aria-label="Nächstes Rezept">&#10095;</button>
             </div>
         </section>
-        <section class="categories">
+        
+        <section class="categories" aria-labelledby="categories-title">
             <div class="section__title">
-                <h2>Köstliche Vielfalt für jeden Gang</h2>
+                <h2 id="categories-title">Köstliche Vielfalt für jeden Gang</h2>
             </div>
             <div class="categorie-cards">
-                <article class="categorie-card">
-                    <img src="ressources/img/vorspeise.png" alt="Buddha Bowl">
+                <article class="categorie-card" aria-label="Vorspeise">
+                    <img src="ressources/img/vorspeise.png" alt="Vegane Vorspeise">
                     <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
                 </article>
-                <article class="categorie-card">
-                    <img src="ressources/img/hauptgericht.png" alt="Quiche">
+                <article class="categorie-card" aria-label="Hauptgericht">
+                    <img src="ressources/img/hauptgericht.png" alt="Veganes Hauptgericht">
                     <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
                 </article>
-                <article class="categorie-card">
-                    <img src="ressources/img/dessert.png" alt="Buddha Bowl">
+                <article class="categorie-card" aria-label="Dessert">
+                    <img src="ressources/img/dessert.png" alt="Veganes Dessert">
                     <button class="btn"><a href="rezept-detail.html">Zum Rezept</a></button>
                 </article>
             </div>
         </section>
-        <section class="tipps">
+        <section class="tipps" aria-labelledby="tipps-title">
             <div class="section__title">
-                <h2>Beliebteste Tipps & Tricks für die Küche</h2>
+                <h2 id="tipps-title">Beliebteste Tipps &amp; Tricks für die Küche</h2>
             </div>
-            <article class="home-tipp-card">
+            <article class="home-tipp-card" aria-label="Tipp: Ersatz für Eier beim Backen">
                 <div class="tipp-card-right">
                     <h2>Ersatz für Eier beim Backen</h2>
                     <p>Wenn du Eier beim Backen ersetzen möchtest, gibt es zahlreiche vegane Alternativen. Apfelmus, zerdrückte Bananen oder Chia-Samen in Wasser eingeweicht funktionieren hervorragend. Diese Zutaten verleihen deinen Backwaren die nötige Feuchtigkeit und Bindung.</p>
                     <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
                 </div>
-                <img src="ressources/img/tipp-eier.png" alt="">
+                <img src="ressources/img/tipp-eier.png" alt="Tipps für den Ersatz von Eiern beim Backen">
             </article>
-            <article class="home-tipp-card reverse">
-                <img src="ressources/img/tipp-umami.png" alt="">
+            <article class="home-tipp-card reverse" aria-label="Tipp: Mehr Geschmack mit Umami">
+                <img src="ressources/img/tipp-umami.png" alt="Tipps für Umami-reiche Zutaten">
                 <div class="tipp-card-right">
                     <h2>Mehr Geschmack mit Umami</h2>
                     <p>Vegane und vegetarische Gerichte profitieren von umami-reichen Zutaten, die einen tiefen, herzhaften Geschmack bieten. Verwende Sojasauce, Miso, getrocknete Tomaten oder Pilze, um deinen Gerichten mehr Tiefe und Komplexität zu verleihen.</p>
                     <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
                 </div>
             </article>
-            <article class="home-tipp-card">
+            <article class="home-tipp-card" aria-label="Tipp: Cremige Saucen ohne Milchprodukte">
                 <div class="tipp-card-right">
                     <h2>Cremige Saucen ohne Milchprodukte</h2>
-                    <p>Für cremige Saucen und Dressings musst du nicht auf Milchprodukte zurückgreifen. Cashewkerne, die in Wasser eingeweicht und dann püriert werden, ergeben eine wunderbar cremige Basis. Alternativ kannst du auch pflanzliche Milchsorten wie Mandel- oder Kokosmilch verwenden.</p>
+                    <p>Für cremige Saucen und Dressings musst du nicht auf Milchprodukte zurückgreifen. Cashewkerne, die in Wasser eingeweicht und dann püreiert werden, ergeben eine wunderbar cremige Basis. Alternativ kannst du auch pflanzliche Milchsorten wie Mandel- oder Kokosmilch verwenden.</p>
                     <button class="btn" onclick="navigateToTippDetailPage()">Mehr erfahren</button>
                 </div>
-                <img src="ressources/img/tipp-milch.png" alt="">
+                <img src="ressources/img/tipp-milch.png" alt="Tipps für cremige Saucen ohne Milchprodukte">
             </article>
         </section>
-        <div include-html="includes/footer.html"></div>
+        <div include-html="includes/footer.html" aria-label="Seitenfuß"></div>
     </body>
 </html>
