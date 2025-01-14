@@ -95,7 +95,7 @@
 }
 
 .recipe-card img {
-    max-width: 250px;
+    max-width: 350px;
 }
 
 .recipe-card p,
@@ -183,6 +183,10 @@
 }
 
 @media (max-width: 1000px) {
+
+    .slider__slide {
+        flex: 0 0 50%;
+    }
     .recipe-cards {
         display: flex;
         justify-content: center;
@@ -201,6 +205,12 @@
     
     .reverse {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__slide {
+        flex: 0 0 100%;
     }
 }
 
