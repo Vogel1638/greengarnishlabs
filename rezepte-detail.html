@@ -10,86 +10,14 @@
         <link rel="stylesheet" href="css/rezepte__detail.css">
         <link rel="stylesheet" href="css/general.css">
         <script src="js/script.js" defer></script>
+        <script type="module" src="./ressources/data/recipes.js"></script>
+        <script type="module" src="./js/show.js"></script>
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div include-html="includes/header.html"></div>
         <main class="rezept-content">
-            <section class="intro">
-                <div class="back" onclick="goBack()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <p>Zurück</p>
-                </div>
-                <div class="infos">
-                    <img src="ressources/img/bolognese-detail.png" alt="Linsen Bolognese">
-                    <div class="rezept-text">
-                        <div>
-                            <h2>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegansymbol"></h2>
-                            <h3>mit Linsen und Kräutern</h3>
-                        </div>
-                        <div>
-                            <p>Zubereitungszeit: 15 Minuten<br>
-                            Gesamtzeit: 45 Minuten</p>
-                        </div>
-                        <p>Schweregrad: Einfach</p>
-                        <button class="btn">Auf die Lieblingsliste</button>
-                    </div> 
-                </div>
-            </section>
-            <section class="zubereitung-details">
-                <div class="left-detail">
-                    <article class="zutaten">
-                        <div class="zutaten-titel">
-                            Zutaten
-                        </div>
-                        <div class="zutaten-detail">
-                            <ul>
-                                <li>1 Tasse grüne oder braune Linsen, gespült</li>
-                                <li>1 Zwiebel, fein gehackt</li>
-                                <li>2 Knoblauchzehen, gehackt</li>
-                                <li>2 Karotten, gewürfelt</li>
-                                <li>2 Stangen Sellerie, gewürfelt</li>
-                                <li>1 Dose (400 g) gehackte Tomaten</li>
-                                <li>2 EL Tomatenmark</li>
-                                <li>1 EL Olivenöl</li>
-                                <li>1 TL getrockneter Oregano</li>
-                                <li>1 TL getrockneter Basilikum</li>
-                                <li>4 Tassen Gemüsebrühe</li>
-                                <li>Salz und Pfeffer nach Geschmack</li>
-                                <li>Frische Petersilie, gehackt (zum Garnieren)</li>
-                                <li>Vollkorn-Spaghetti (oder andere Pasta nach Wahl)</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="servier-tipp">
-                        <div class="servier-titel">
-                            Serviertipp
-                        </div>
-                        <div class="servier-detail">
-                            <p>Für ein besonders ansprechendes und schmackhaftes Ergebnis kannst du die vegane Linsen-Bolognese mit etwas frisch geriebenem veganem Parmesan und einem Spritzer frischem Zitronensaft servieren. Ein paar Basilikumblätter oder ein Zweig frischer Thymian sorgen für eine schöne Garnitur und einen zusätzlichen aromatischen Kick. Begleite das Gericht mit einer Scheibe knusprigem Vollkornbrot oder einem frischen grünen Salat, um die Mahlzeit abzurunden.</p>
-                        </div>
-                    </article>
-                </div>
-                <article class="anleitung">
-                    <div class="anleitung-titel">
-                        Zubereitung
-                    </div>
-                    <div class="anleitung-detail">
-                        <h3>Zutaten vorbereiten</h3>
-                        <p>Beginne damit, die Linsen in ein Sieb zu geben und unter fließendem Wasser gut abzuspülen. Stelle sie beiseite, während du das Gemüse vorbereitest. Hacke die Zwiebel fein, schäle und hacke die Knoblauchzehen. Schäle die Karotten und schneide sie in kleine Würfel. Wasche den Sellerie und würfle ihn ebenfalls klein.</p>
-                        <h3>Gemüse anbraten</h3>
-                        <p>Erhitze das Olivenöl in einem großen Topf bei mittlerer Hitze. Füge die gehackte Zwiebel und den Knoblauch hinzu und brate sie etwa 5 Minuten lang an, bis sie weich und leicht gebräunt sind. Dann gib die gewürfelten Karotten und den Sellerie dazu und brate das Gemüse weitere 5-7 Minuten an, bis es leicht weich ist.</p>
-                        <h3>Sauce zubereiten</h3>
-                        <p>Rühre das Tomatenmark in den Topf, bis es sich gleichmäßig verteilt hat. Füge getrockneten Oregano und Basilikum hinzu, würze mit Salz und Pfeffer und rühre alles gut um. Gib die gespülten Linsen und die gehackten Tomaten samt Saft in den Topf und mische sie gut mit dem Gemüse und den Gewürzen.</p>
-                        <h3>Köcheln lassen</h3>
-                        <p>Gieße die Gemüsebrühe in den Topf und rühre die Mischung gut um. Erhöhe die Hitze, um die Mischung zum Kochen zu bringen. Sobald sie kocht, reduziere die Hitze und lasse die Linsen-Bolognese zugedeckt etwa 30 Minuten köcheln, bis die Linsen weich sind und die Sauce eingedickt ist. Vergiss nicht, gelegentlich umzurühren.</p>
-                        <h3>Pasta kochen</h3>
-                        <p>Während die Linsen-Bolognese köchelt, koche die Vollkorn-Spaghetti nach Packungsanweisung in einem großen Topf mit kochendem Salzwasser al dente. Gieße die gekochte Pasta ab und stelle sie beiseite.</p>
-                        <h3>Servieren</h3>
-                        <p>Zum Schluss schmecke die Linsen-Bolognese noch einmal ab und würze bei Bedarf nach. Verteile die gekochte Pasta auf Teller und gib die Linsen-Bolognese darüber. Garniere das Gericht mit frisch gehackter Petersilie und serviere es sofort. Guten Appetit!</p>
-                    </div>
-                </article>
-            </section>
+
         </main>
         <div include-html="includes/footer.html"></div>
     </body>

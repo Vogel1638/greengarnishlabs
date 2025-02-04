@@ -130,29 +130,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Set default active tab and content
     tabs[0].classList.add('active');
     contents[0].classList.add('active');
 });
 
 
 // NOTE Filter BTN
-// Logik zum Öffnen und Schließen des Popups
 const filterBtn = document.getElementById('filterBtn');
 const filterPopup = document.getElementById('filterPopup');
 const closePopupBtn = document.getElementById('closePopupBtn');
 
-// Öffne das Popup, wenn der Benutzer auf den "Filter" Button klickt
 filterBtn.addEventListener('click', () => {
     filterPopup.classList.remove('hidden');
 });
 
-// Schließe das Popup, wenn der Benutzer auf den Schließen-Button (X) klickt
 closePopupBtn.addEventListener('click', () => {
     filterPopup.classList.add('hidden');
 });
 
-// Optional: Schließe das Popup, wenn der Benutzer außerhalb des Popups klickt
 window.addEventListener('click', (event) => {
     if (event.target === filterPopup) {
         filterPopup.classList.add('hidden');

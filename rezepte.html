@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/general.css">
         <script src="js/script.js" defer></script>
+        <script type="module" src="./ressources/data/recipes.js"></script>
+        <script type="module" src="./js/show.js"></script>
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body class="rezepte-body">
@@ -58,147 +60,6 @@
             <button onclick="filterRecipes()" class="easy-filter-btn">Filtern</button>
         </section>
         <section class="rezepte">
-            <article class="recipe-card">
-                <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
-                <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/quiche.png" alt="Quiche">
-                <h3>Quiche</h3>
-                <p class="extra">mit Zucchini und Paprika</p>
-                <p>Zubereitungszeit: 75 Minuten<br>
-                Schweregrad: Mittel</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
-                <h3>Gemüselasagne</h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article> <article class="recipe-card">
-                <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
-                <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/quiche.png" alt="Quiche">
-                <h3>Quiche</h3>
-                <p class="extra">mit Zucchini und Paprika</p>
-                <p>Zubereitungszeit: 75 Minuten<br>
-                Schweregrad: Mittel</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
-                <h3>Gemüselasagne</h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article> <article class="recipe-card">
-                <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
-                <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/quiche.png" alt="Quiche">
-                <h3>Quiche</h3>
-                <p class="extra">mit Zucchini und Paprika</p>
-                <p>Zubereitungszeit: 75 Minuten<br>
-                Schweregrad: Mittel</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
-                <h3>Gemüselasagne</h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article> <article class="recipe-card">
-                <img src="ressources/img/vegan-bowl.png" alt="Buddha Bowl">
-                <h3>Buddha Bowl <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol"></h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/quiche.png" alt="Quiche">
-                <h3>Quiche</h3>
-                <p class="extra">mit Zucchini und Paprika</p>
-                <p>Zubereitungszeit: 75 Minuten<br>
-                Schweregrad: Mittel</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/lasagne.png" alt="Buddha Bowl">
-                <h3>Gemüselasagne</h3>
-                <p class="extra">mit Tahini-Dressing</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
-            <article class="recipe-card">
-                <img src="ressources/img/bolognese.png" alt="Buddha Bowl">
-                <h3>Linsen-Bolognese <img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol"></h3>
-                <p class="extra">mit Linsen und Kräutern</p>
-                <p>Zubereitungszeit: 40 Minuten<br>
-                Schweregrad: Einfach</p>
-                <button class="btn" onclick="navigateToRecipeDetailPage()">Zum Rezept</button>
-            </article>
         </section>
         <div include-html="includes/footer.html"></div>
     </body>

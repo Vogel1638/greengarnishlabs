@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GreenGarnishLabs - Vegane Rezepte entdecken & genießen</title>
+
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="js/script.js" defer></script>
+        <script src="js/filter.js"></script>
+        <script src="js/contact.js" defer></script>
+        <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
+
+        <main class="contact-body">
+            <section class="contact-section">
+                <div class="contact-left">
+                    <h1 class="contact-title">Kontaktieren Sie uns</h1>
+                    <p>Haben Sie Fragen, Anregungen oder möchten Sie mit uns über die Vielfalt der veganen und vegetarischen Küche sprechen? Wir freuen uns, von Ihnen zu hören!</p>
+                </div>
+                <form id="userForm" novalidate>
+                    <label for="anrede">Anrede:</label>
+                    <select id="anrede" name="anrede" aria-placeholder="Anrede">
+                        <option value="" aria-placeholder="Bitte Wählen">Bitte auswählen</option>
+                        <option value="herr" aria-placeholder="Herr">Herr</option>
+                        <option value="frau" aria-placeholder="Frau">Frau</option>
+                    </select>
+
+                    <div class="half-width">
+                        <div class="form-input">
+                            <label for="vorname">Vorname:</label>
+                            <input type="text" id="vorname" name="vorname" placeholder="Vorname">
+                        </div>
+                        
+                        <div class="form-input">
+                            <label for="nachname">Nachname:</label>
+                            <input type="text" id="nachname" name="nachname" placeholder="Nachname">
+                        </div>
+                        
+                    </div>                    
+            
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+
+                    <div class="half-width">
+                        <div class="form-input">
+                            <label for="plz">Postleitzahl:</label>
+                            <input type="number" id="plz" name="plz" maxlength="4" placeholder="PLZ">
+                        </div>
+                        
+                        <div class="form-input">
+                            <label for="ort">Ort:</label>
+                            <input type="text" id="ort" name="ort" placeholder="Ort">
+                        </div>
+                        
+                    </div>   
+            
+                    <label for="email">E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" placeholder="E-Mail">
+            
+                    <label for="nachricht">Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht" maxlength="500" placeholder="Ihre Nachricht"></textarea>
+            
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
+            </section>
+            
+        </main>
+        
+
+        <div include-html="includes/footer.html" aria-label="Seitenfuß"></div>
+
+    </body>
+</html>

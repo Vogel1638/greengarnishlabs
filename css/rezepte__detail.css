@@ -31,12 +31,13 @@
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
+    align-items: center;
 }
 
 .left-detail {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column-reverse;
+    gap: 15px;
 }
 
 .zutaten {

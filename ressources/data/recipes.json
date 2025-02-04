@@ -1,0 +1,37 @@
+{
+    "1" : {
+        "name" : "Linsen-Bolognese",
+        "image" : "linsen-bolognese",
+        "vegan" : true,
+        "subtitle" : "mit Linsen und Kräutern",
+        "cookingTime" : "15",
+        "totalTime" : "45",
+        "difficulty" : "Einfach",
+        "ingredients" : ["1 Tasse grüne oder braune Linsen", "1 Zwiebel", "2 Knoblauchzehen", "2 Karotten, gewürfelt", "2 Stangen Sellerie", "1 Dose (400 g) gehackte Tomaten", "2 EL Tomatenmark", "1 EL Olivenöl", "1 TL getrockneter Oregano", "1 TL getrockneter Basilikum", "4 Tassen Gemüsebrühe", "Frische Petersilie", "Vollkorn-Spaghetti"],
+        "preparation" : "Beginne damit, die Linsen in ein Sieb zu geben und unter fließendem Wasser gut abzuspülen. Stelle sie beiseite, während du das Gemüse vorbereitest. Hacke die Zwiebel fein, schäle und hacke die Knoblauchzehen. Schäle die Karotten und schneide sie in kleine Würfel. Wasche den Sellerie und würfle ihn ebenfalls klein.",
+        "servingTip" : "Für ein besonders ansprechendes und schmackhaftes Ergebnis kannst du die vegane Linsen-Bolognese mit etwas frisch geriebenem veganem Parmesan und einem Spritzer frischem Zitronensaft servieren. Ein paar Basilikumblätter oder ein Zweig frischer Thymian sorgen für eine schöne Garnitur und einen zusätzlichen aromatischen Kick. Begleite das Gericht mit einer Scheibe knusprigem Vollkornbrot oder einem frischen grünen Salat, um die Mahlzeit abzurunden."
+    },
+    "2" : {
+        "name" : "Buddha Bowl",
+        "image" : "buddha-bowl",
+        "vegan" : true,
+        "subtitle" : "mit Tahini-Dressing",
+        "cookingTime" : "15",
+        "totalTime" : "40",
+        "difficulty" : "Einfach",
+        "ingredients" : ["200g Sushireis", "1 Rote Zwiebel", "1/2 Brokkoli", "1/2 Paprika", "100g weisse Champignons", "1 Karotte", "1 Avocado", "125g Tofu, geräuchert", "10 Koriander, frishc", "50g Erdnüsse, geröstet ohne Salz", "2 EL Öl zum Anbraten", "2 EL Sojasauce", "4 EL Poke Sauce", "2 EL Röstzwiebeln", "1 TL Sesamöl, geröstet"],
+        "preparation" : "Reis nach Packungsanleitung kochen. Zwiebel(n) schälen und in feine Ringe schneiden. Brokkoli waschen und in kleine Röschen teilen. Paprika waschen, entkernen und in feine Streifen schneiden.Champignons putzen und in Scheiben schneiden",
+        "servingTip" : "test"
+    },
+    "3" : {
+        "name" : "Linsen-Bolognese",
+        "vegan" : true,
+        "subtitle" : "mit Linsen und Kräutern",
+        "cookingTime" : "15",
+        "totalTime" : "45",
+        "difficulty" : "Einfach",
+        "ingredients" : ["1 Tasse grüne oder braune Linsen", "1 Zwiebel", "2 Knoblauchzehen", "2 Karotten, gewürfelt", "2 Stangen Sellerie", "1 Dose (400 g) gehackte Tomaten", "2 EL Tomatenmark", "1 EL Olivenöl", "1 TL getrockneter Oregano", "1 TL getrockneter Basilikum", "4 Tassen Gemüsebrühe", "Frische Petersilie", "Vollkorn-Spaghetti"],
+        "preparation" : "Beginne damit, die Linsen in ein Sieb zu geben und unter fließendem Wasser gut abzuspülen. Stelle sie beiseite, während du das Gemüse vorbereitest. Hacke die Zwiebel fein, schäle und hacke die Knoblauchzehen. Schäle die Karotten und schneide sie in kleine Würfel. Wasche den Sellerie und würfle ihn ebenfalls klein.",
+        "servingTip" : "Für ein besonders ansprechendes und schmackhaftes Ergebnis kannst du die vegane Linsen-Bolognese mit etwas frisch geriebenem veganem Parmesan und einem Spritzer frischem Zitronensaft servieren. Ein paar Basilikumblätter oder ein Zweig frischer Thymian sorgen für eine schöne Garnitur und einen zusätzlichen aromatischen Kick. Begleite das Gericht mit einer Scheibe knusprigem Vollkornbrot oder einem frischen grünen Salat, um die Mahlzeit abzurunden."
+    }
+}

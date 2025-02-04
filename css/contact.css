@@ -1,0 +1,85 @@
+.contact-body {
+    background: url('../ressources/img/hero-img.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-section {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-left {
+    max-width: 50%;
+}
+
+.contact-title {
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    max-width: 400px;
+}
+
+label {
+    display: none;
+    margin-top: 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input, select, textarea {
+    background: none;
+    border: 2px solid #ccc;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder, select {
+    color: white;
+}
+
+select option {
+    background: black;
+}
+
+input:active {
+    background: none;
+}
+
+.half-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    border-color: #f44336;
+}
+
+.success {
+    border-color: #4CAF50;
+}

@@ -99,12 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearTimeout(resetTimeout);
     resetTimeout = setTimeout(startAutoSlide, 10000);
   }
-
-  function updateDescription() {
-    console.log('Current slide:', currentSlide + 1);
-    // Implement your description update logic here
-  }
-
+  
   // Initial setup
   updateActiveSlide();
   startAutoSlide();
