@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,51 +16,48 @@
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body class="rezepte-body">
-        <div include-html="includes/header.html"></div>
+        <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
         <h1 class="rezept-titel">Köstliche Rezepte für jeden Geschmack</h1>
-        <section class="easy-filter">
+        <section class="easy-filter" aria-labelledby="filter-title">
+            <h2 id="filter-title" class="visually-hidden">Rezepte filtern</h2>
             <div class="filter-group">
                 <label for="category">Kategorie</label>
-                <select id="category">
+                <select id="category" aria-label="Kategorie auswählen">
                     <option value="alle">Alle</option>
                     <option value="vorspeise">Vorspeise</option>
                     <option value="hauptgericht">Hauptgericht</option>
                     <option value="dessert">Dessert</option>
                 </select>
             </div>
-            
             <div class="filter-group">
                 <label for="difficulty">Schwierigkeitsgrad</label>
-                <select id="difficulty">
+                <select id="difficulty" aria-label="Schwierigkeitsgrad auswählen">
                     <option value="einfach">Einfach</option>
                     <option value="mittel">Mittel</option>
                     <option value="schwer">Schwer</option>
                 </select>
             </div>
-            
             <div class="filter-group">
                 <label for="time">Zeit</label>
                 <div class="slider-container">
                     <div class="slider-values">
-                        <span id="time-min">15</span> - <span id="time-max">90</span> Minuten
+                        <span id="time-min" aria-live="polite">15</span> - <span id="time-max" aria-live="polite">90</span> Minuten
                     </div>
-                    <input type="range" id="time-min-slider" class="slider" min="0" max="120" step="5" value="15" oninput="updateTimeValues()">
-                    <input type="range" id="time-max-slider" class="slider" min="0" max="120" step="5" value="90" oninput="updateTimeValues()">
+                    <input type="range" id="time-min-slider" class="slider" min="0" max="120" step="5" value="15" oninput="updateTimeValues()" aria-label="Minimale Zubereitungszeit">
+                    <input type="range" id="time-max-slider" class="slider" min="0" max="120" step="5" value="90" oninput="updateTimeValues()" aria-label="Maximale Zubereitungszeit">
                 </div>
             </div>
-            
             <div class="filter-group">
                 <label for="diet">Vegan/Vegetarisch</label>
-                <select id="diet">
+                <select id="diet" aria-label="Ernährungsweise auswählen">
                     <option value="beides">Beides</option>
                     <option value="vegan">Vegan</option>
                     <option value="vegetarisch">Vegetarisch</option>
                 </select>
             </div>
-            <button onclick="filterRecipes()" class="easy-filter-btn">Filtern</button>
+            <button onclick="filterRecipes()" class="easy-filter-btn" aria-label="Rezepte filtern">Filtern</button>
         </section>
-        <section class="rezepte">
-        </section>
-        <div include-html="includes/footer.html"></div>
+        <section class="rezepte" aria-label="Rezeptübersicht"></section>
+        <div include-html="includes/footer.html" aria-label="Seitenfuss"></div>
     </body>
 </html>

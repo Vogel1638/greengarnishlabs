@@ -25,6 +25,7 @@ body {
     background-color: #010300;
     color: #FEF5DE;
     max-width: 2000px;
+    margin: 0 auto;
 }
 
 .divider {

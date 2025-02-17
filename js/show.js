@@ -75,16 +75,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log("Lade Rezept aus localStorage:", e);
 
         content.innerHTML = `
-            <section class="intro">
-                <div class="back" onclick="history.back()">
-                    <i class="fa-solid fa-arrow-left"></i>
+            <section class="intro" aria-labelledby="rezept-titel">
+                <div class="back" onclick="history.back()" role="button" tabindex="0" aria-label="Zurück zur vorherigen Seite">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                     <p>Zurück</p>
                 </div>
                 <div class="infos">
-                    <img src="ressources/img/detail/${e.image}-detail.png" alt="${e.name}">
+                    <img src="ressources/img/detail/${e.image}-detail.png" alt="${e.name}" role="img">
                     <div class="rezept-text">
                         <div>
-                            <h2>${e.name} ${e.vegan ? '<img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol">' : ''}</h2>
+                            <h2 id="rezept-titel">${e.name} ${e.vegan ? '<img src="ressources/img/icons/vegan-symbol.svg" alt="Vegan Symbol" class="vegan-symbol" role="img">' : ''}</h2>
                             <h3>${e.subtitle}</h3>
                         </div>
                         <div>
@@ -94,23 +94,32 @@ document.addEventListener("DOMContentLoaded", async () => {
                     </div>
                 </div>
             </section>
-            <section class="zubereitung-details">
+            <section class="zubereitung-details" aria-labelledby="zutaten-anleitung-titel">
                 <div class="left-details">
-                    <article class="zutaten">
-                        <p class="zutaten-titel">Zutaten</p>
+                    <article class="zutaten" aria-labelledby="zutaten-titel">
+                        <p id="zutaten-titel" class="zutaten-titel">Zutaten</p>
                         <div class="zutaten-detail">
-                            <ul>${e.ingredients.map(ing => `<li>${ing}</li>`).join('')}</ul>
+                            <ul id="zutaten-liste">
+                                ${e.ingredients.map(ing => `
+                                    <li>
+                                        ${ing.amount !== null ? ing.amount : ''} 
+                                        ${ing.unit !== null ? ing.unit : ''} 
+                                        ${ing.ingredient} 
+                                        ${ing.preparation ? `(${ing.preparation})` : ''}
+                                    </li>
+                                `).join('')}
+                            </ul>
                         </div>
                     </article>
-                    <article class="servier-tipp">
-                        <p class="servier-titel">Serviertipp</p>
+                    <article class="servier-tipp" aria-labelledby="servier-tipp-titel">
+                        <p id="servier-tipp-titel" class="servier-titel">Serviertipp</p>
                         <div class="servier-detail">
                             <p>${e.servingTip}</p>
                         </div>
                     </article>
                 </div>
-                <article class="anleitung">
-                    <p class="anleitung-titel">Zubereitung</p>
+                <article class="anleitung" aria-labelledby="anleitung-titel">
+                    <p id="anleitung-titel" class="anleitung-titel">Zubereitung</p>
                     <div class="anleitung-detail">
                         <p>${e.preparation}</p>
                     </div>

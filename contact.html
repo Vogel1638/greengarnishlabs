@@ -20,33 +20,30 @@
 
         <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
 
-        <main class="contact-body">
+        <main class="contact-body" aria-labelledby="contact-title">
             <section class="contact-section">
                 <div class="contact-left">
-                    <h1 class="contact-title">Kontaktieren Sie uns</h1>
+                    <h1 id="contact-title" class="contact-title">Kontaktieren Sie uns</h1>
                     <p>Haben Sie Fragen, Anregungen oder möchten Sie mit uns über die Vielfalt der veganen und vegetarischen Küche sprechen? Wir freuen uns, von Ihnen zu hören!</p>
                 </div>
-                <form id="userForm" novalidate>
+                <form id="userForm" novalidate aria-label="Kontaktformular">
                     <label for="anrede">Anrede:</label>
-                    <select id="anrede" name="anrede" aria-placeholder="Anrede">
-                        <option value="" aria-placeholder="Bitte Wählen">Bitte auswählen</option>
-                        <option value="herr" aria-placeholder="Herr">Herr</option>
-                        <option value="frau" aria-placeholder="Frau">Frau</option>
+                    <select id="anrede" name="anrede">
+                        <option value="">Bitte auswählen</option>
+                        <option value="herr">Herr</option>
+                        <option value="frau">Frau</option>
                     </select>
 
                     <div class="half-width">
                         <div class="form-input">
                             <label for="vorname">Vorname:</label>
-                            <input type="text" id="vorname" name="vorname" placeholder="Vorname">
+                            <input type="text" id="vorname" name="vorname" placeholder="Vorname" required>
                         </div>
-                        
                         <div class="form-input">
                             <label for="nachname">Nachname:</label>
-                            <input type="text" id="nachname" name="nachname" placeholder="Nachname">
+                            <input type="text" id="nachname" name="nachname" placeholder="Nachname" required>
                         </div>
-                        
                     </div>                    
-            
                     <label for="adresse">Adresse:</label>
                     <input type="text" id="adresse" name="adresse" placeholder="Adresse">
 
@@ -55,28 +52,19 @@
                             <label for="plz">Postleitzahl:</label>
                             <input type="number" id="plz" name="plz" maxlength="4" placeholder="PLZ">
                         </div>
-                        
                         <div class="form-input">
                             <label for="ort">Ort:</label>
                             <input type="text" id="ort" name="ort" placeholder="Ort">
                         </div>
-                        
                     </div>   
-            
                     <label for="email">E-Mail-Adresse:</label>
-                    <input type="email" id="email" name="email" placeholder="E-Mail">
-            
+                    <input type="email" id="email" name="email" placeholder="E-Mail" required>
                     <label for="nachricht">Nachricht:</label>
-                    <textarea id="nachricht" name="nachricht" maxlength="500" placeholder="Ihre Nachricht"></textarea>
-            
+                    <textarea id="nachricht" name="nachricht" maxlength="500" placeholder="Ihre Nachricht" required></textarea>
                     <button type="submit" class="btn">Absenden</button>
                 </form>
             </section>
-            
         </main>
-        
-
-        <div include-html="includes/footer.html" aria-label="Seitenfuß"></div>
-
+        <div include-html="includes/footer.html" aria-label="Seitenfuss"></div>
     </body>
 </html>

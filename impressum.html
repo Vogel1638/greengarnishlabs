@@ -14,15 +14,16 @@
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div include-html="includes/header.html"></div>
-        <main class="tipp-content">
-            <div class="tipp-slider">
+        <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
+        <main class="tipp-content" aria-labelledby="impressum-dse-title">
+            <h1 id="impressum-dse-title" hidden>Impressum & Datenschutzerklärung</h1>
+            <div class="tipp-slider" role="tablist" aria-label="Rechtliche Informationen">
                 <div class="tipp-slider-tabs">
-                    <div class="tipp-tab" data-tab="impressum">Impressum</div>
-                    <div class="tipp-tab" data-tab="dse">Datenschutzerklärung</div>
+                    <div class="tipp-tab" data-tab="impressum" role="tab" aria-controls="impressum">Impressum</div>
+                    <div class="tipp-tab" data-tab="dse" role="tab" aria-controls="dse">Datenschutzerklärung</div>
                 </div>
                 <div class="tipp-slider-content">
-                    <div class="tipps-content" id="impressum">
+                    <div class="tipps-content" id="impressum" role="tabpanel" tabindex="0">
                         <p><span class="dse_title">Verantwortlich für den Inhalt:</span><br>
                             GreenGarnishLabs<br>
                             Levin Vogt<br>
@@ -43,7 +44,7 @@
                         <p><span class="dse_title">Urheberrechtserklärung</span><br>                            
                             Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der Jubla Galgenen oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.</p>
                     </div>
-                    <div class="tipps-content" id="dse">
+                    <div class="tipps-content" id="dse" role="tabpanel" tabindex="0">
                         <p>Zuletzt aktualisiert am: 17.06.2024
                             
                         <p>Wir legen grossen Wert darauf, dass der Umgang mit Personendaten transparent ist. Diese Datenschutzerklärung gibt Auskunft darüber, welche personenbezogenen Daten wir sammeln, zu welchem Zweck und an wen wir sie weitergeben. Um eine hohe Transparenz zu gewährleisten, wird diese Datenschutzerklärung regelmässig überprüft und aktualisiert.</p>
@@ -152,6 +153,6 @@
                 </div>
             </div>
         </main>
-        <div include-html="includes/footer.html"></div>
+        <div include-html="includes/footer.html" aria-label="Seitenfuss"></div>
     </body>
 </html>

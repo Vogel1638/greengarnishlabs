@@ -182,6 +182,12 @@
     max-width: 80%;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+    gap: 10rem;
+
+}
+
 @media (max-width: 1000px) {
 
     .slider__slide {

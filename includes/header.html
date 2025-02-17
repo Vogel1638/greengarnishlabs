@@ -1,7 +1,7 @@
-<header>
+<header aria-label="Hauptnavigation">
     <div class="desktop-header">
-        <a href="../index.html" class="logo">GreenGarnishLabs</a>
-        <nav class="desktop__navbar">
+        <a href="../index.html" class="logo" aria-label="Zur Startseite">GreenGarnishLabs</a>
+        <nav class="desktop__navbar" aria-label="Hauptnavigation Desktop">
             <menu>
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="rezepte.html" class="nav-link">Rezepte</a></li>
@@ -10,23 +10,22 @@
             </menu>
         </nav>
         <div class="right-header">
-            <button class="cta-btn open-filter-btn" id="filterBtn">Rezept-Finder</button>
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-            <i class="fa-regular fa-heart fa-xl"></i>  
+            <button class="cta-btn open-filter-btn" id="filterBtn" aria-label="Rezept-Finder öffnen">Rezept-Finder</button>
+            <i class="fa-solid fa-magnifying-glass fa-xl" aria-hidden="true" aria-label="Suche öffnen"></i>
+            <i class="fa-regular fa-heart fa-xl" aria-hidden="true" aria-label="Favoriten anzeigen"></i>
         </div>     
     </div>
     <div class="mobile-header">
         <h1 class="logo">GreenGarnishLabs</h1>
-        <button class="hamburger-menu" onclick="toggleOverlay()" aria-label="Open Mobile Navigation"><i class="fas fa-bars"></i></button>
+        <button class="hamburger-menu" onclick="toggleOverlay()" aria-label="Mobile Navigation öffnen"><i class="fas fa-bars" aria-hidden="true"></i></button>
     </div>
 </header>
 
-<!--NOTE Responsiv Header-->
-
-<header class="overlay" id="mobile-overlay">
+<!-- Responsiver Header -->
+<header class="overlay" id="mobile-overlay" aria-label="Mobile Navigation">
     <div class="logo-close">
         <h1 class="logo">GreenGarnishLabs</h1>
-        <button class="close-btn" onclick="toggleOverlay()"><i class="fas fa-times"></i></button>
+        <button class="close-btn" onclick="toggleOverlay()" aria-label="Mobile Navigation schließen"><i class="fas fa-times" aria-hidden="true"></i></button>
     </div>
     <nav class="mobile__navbar">
         <menu>
@@ -35,11 +34,10 @@
             <li class="nav-item"><a href="tipps-tricks.html" class="nav-link">Tipps & Tricks</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
         </menu>
-        <button class="cta-btn"><a href="rezeptfilter-1.html">Rezept-Finder</a></button>
+        <button class="cta-btn" aria-label="Zum Rezept-Finder"><a href="rezeptfilter-1.html">Rezept-Finder</a></button>
         <div class="mobile__icons">
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-            <i class="fa-regular fa-heart fa-xl"></i>  
+            <i class="fa-solid fa-magnifying-glass fa-xl" aria-hidden="true" aria-label="Suche öffnen"></i>
+            <i class="fa-regular fa-heart fa-xl" aria-hidden="true" aria-label="Favoriten anzeigen"></i>
         </div>
     </nav>
-    
 </header>

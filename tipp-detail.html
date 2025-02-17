@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,45 +13,45 @@
         <script src="https://kit.fontawesome.com/28c75585b3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div include-html="includes/header.html"></div>
-        <img src="ressources/img/tipp-detail-hero.png" alt="" class="tipp-detail-hero">
-        <main class="tipp-content">
+        <div include-html="includes/header.html" aria-label="Seitenkopf"></div>
+        <img src="ressources/img/tipp-detail-hero.png" alt="Hero-Bild für Tipp: Cremige Saucen ohne Milchprodukte" class="tipp-detail-hero" role="img">
+        <main class="tipp-content" aria-labelledby="tipp-detail-title">
             <section class="tipp-title">
-                <div class="back" onclick="goBack()">
-                    <i class="fa-solid fa-arrow-left"></i>
+                <div class="back" onclick="goBack()" role="button" tabindex="0" aria-label="Zurück zur vorherigen Seite">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                     <p>Zurück</p>
                 </div>
-                <h2>Cremige Saucen ohne Milchprodukte</h2>
+                <h2 id="tipp-detail-title">Cremige Saucen ohne Milchprodukte</h2>
             </section>
             <section class="tipp-content">
                 <p>Für viele Menschen, die auf Milchprodukte verzichten möchten oder müssen, kann die Herstellung von cremigen Saucen eine Herausforderung darstellen. Doch es gibt zahlreiche pflanzliche Alternativen, die nicht nur genauso gut, sondern oft sogar besser schmecken. Diese veganen Optionen sind vielseitig einsetzbar und bieten eine gesunde und leckere Alternative zu herkömmlichen Milchprodukten.</p>
             </section>
-            <div class="tipp-slider">
-                <div class="tipp-slider-tabs">
-                    <div class="tipp-tab" data-tab="cashewkerne">Cashewkerne</div>
-                    <div class="tipp-tab" data-tab="milchsorten">Pflanzliche Milchsorten</div>
-                    <div class="tipp-tab" data-tab="kokosmilch">Kokosmilch</div>
-                    <div class="tipp-tab" data-tab="avocado">Avocado</div>
+            <div class="tipp-slider" role="region" aria-label="Zutaten Tabs zur Auswahl pflanzlicher Alternativen">
+                <div class="tipp-slider-tabs" role="tablist">
+                    <button class="tipp-tab" data-tab="cashewkerne" role="tab" aria-controls="cashewkerne">Cashewkerne</button>
+                    <button class="tipp-tab" data-tab="milchsorten" role="tab" aria-controls="milchsorten">Pflanzliche Milchsorten</button>
+                    <button class="tipp-tab" data-tab="kokosmilch" role="tab" aria-controls="kokosmilch">Kokosmilch</button>
+                    <button class="tipp-tab" data-tab="avocado" role="tab" aria-controls="avocado">Avocado</button>
                 </div>
                 <div class="tipp-slider-content">
-                    <div class="tipps-content" id="cashewkerne">
+                    <div class="tipps-content" id="cashewkerne" role="tabpanel" tabindex="0">
                         <p>Cashewkerne sind eine der beliebtesten Zutaten, um cremige Saucen herzustellen. Durch ihre natürliche Cremigkeit und den milden Geschmack eignen sie sich perfekt für eine Vielzahl von Gerichten. Um eine cremige Cashewsauce zuzubereiten, weiche die Cashewkerne zunächst für einige Stunden oder über Nacht in Wasser ein. Dadurch werden sie weicher und lassen sich leichter pürieren. Nach dem Einweichen die Cashews abgießen und zusammen mit frischem Wasser, etwas Zitronensaft, Knoblauch und einer Prise Salz in einen Mixer geben. Püriere die Mischung, bis sie glatt und cremig ist. Diese Basissauce kann nach Belieben gewürzt und angepasst werden, zum Beispiel mit Hefeflocken für einen käsigen Geschmack oder mit frischen Kräutern für eine aromatische Note.</p>
                     </div>
-                    <div class="tipps-content" id="milchsorten">
+                    <div class="tipps-content" id="milchsorten" role="tabpanel" tabindex="0">
                         <p>Pflanzliche Milchsorten wie Mandelmilch, Sojamilch und Kokosmilch sind hervorragende Alternativen zu Kuhmilch und können in vielen Rezepten direkt ersetzt werden. Jede dieser Milchsorten hat ihren eigenen, einzigartigen Geschmack und kann je nach Gericht gewählt werden. Mandelmilch ist leicht und nussig, ideal für leichte Saucen und Dressings. Sojamilch hat einen neutralen Geschmack und ist vielseitig einsetzbar, während Kokosmilch reichhaltig und aromatisch ist, perfekt für asiatische Gerichte oder Currys.</p>
                     </div>
-                    <div class="tipps-content" id="kokosmilch">
+                    <div class="tipps-content" id="kokosmilch" role="tabpanel" tabindex="0">
                         <p>Kokosmilch ist besonders beliebt in der veganen Küche, da sie eine reichhaltige, cremige Textur und einen leicht süßlichen Geschmack hat. Sie eignet sich hervorragend für die Zubereitung von Currys, Suppen und Desserts. Um eine besonders cremige Konsistenz zu erreichen, verwende die dicke, obere Schicht der Kokosmilch, die sich in der Dose absetzt. Diese sogenannte Kokoscreme kann direkt verwendet oder mit etwas Wasser verdünnt werden, um die gewünschte Konsistenz zu erreichen.</p>
                     </div>
-                    <div class="tipps-content" id="avocado">
+                    <div class="tipps-content" id="avocado" role="tabpanel" tabindex="0">
                         <p>Eine überraschende, aber effektive Zutat für cremige Saucen ist die Avocado. Dank ihres hohen Fettgehalts und ihrer glatten Textur kann Avocado in vielen Rezepten als Sahneersatz dienen. Einfach das Fruchtfleisch einer reifen Avocado mit etwas Zitronensaft, Salz und Wasser oder pflanzlicher Milch pürieren. Diese Avocadosauce eignet sich hervorragend als Dressing für Salate, als Basis für grüne Saucen oder als cremiger Dip.</p>
                     </div>
                 </div>
             </div>
             <section class="tipp-content">
-                <p>Die Möglichkeiten, cremige Saucen ohne Milchprodukte zu kreieren, sind nahezu endlos. Mit Zutaten wie Cashewkernen, pflanzlichen Milchsorten, Kokosmilch und Avocado lassen sich vielfältige und schmackhafte Saucen zaubern, die sowohl Veganer als auch Nicht-Veganer begeistern werden. Experimentiere mit verschiedenen Kombinationen und Gewürzen, um deine perfekte cremige Sauce zu finden. So steht einem genussvollen, pflanzenbasierten Kocherlebnis nichts mehr im Wege.</p>
+                <p>Die Die Möglichkeiten, cremige Saucen ohne Milchprodukte zu kreieren, sind nahezu endlos. Mit Zutaten wie Cashewkernen, pflanzlichen Milchsorten, Kokosmilch und Avocado lassen sich vielfältige und schmackhafte Saucen zaubern, die sowohl Veganer als auch Nicht-Veganer begeistern werden. Experimentiere mit verschiedenen Kombinationen und Gewürzen, um deine perfekte cremige Sauce zu finden. So steht einem genussvollen, pflanzenbasierten Kocherlebnis nichts mehr im Wege.</p>
             </section>
         </main>
-        <div include-html="includes/footer.html"></div>
+        <div include-html="includes/footer.html" aria-label="Seitenfuss"></div>
     </body>
 </html>
